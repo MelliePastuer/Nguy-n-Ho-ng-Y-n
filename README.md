@@ -20,3 +20,30 @@ int main(){
 	    }
 	}
 }
+
+
+#include <iostream>
+using namespace std;
+void nhapmang(int a[],int n){
+	for (int i=0;i<n;i++)
+	{
+		cout<<"a["<<i<<"]=";cin>>a[i];
+	}
+}
+void inmang(int a[],int n)
+{
+	for(int i=0;i<=n;i++)
+	cout<<a[i]<<";";
+}
+
+int main(){
+	int a[100],i,n;
+	cout<<"Nhap so phan tu n= ";cin>>n;
+	nhapmang(a,n);
+	cout<<"\n Mang vua nhap la:\n";
+	inmang(a,n);
+	for (int i=0;i<n;i++)
+	if(a[i]%3==0){
+		cout<<"\n phan tu chia het cho 3: "<<a[i]<<";"<<endl;
+	}
+}
